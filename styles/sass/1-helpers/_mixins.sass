@@ -1,0 +1,24 @@
+//MIXINS
+//box sizing
+=box-sizing($box-sizing)
+  -webkit-box-sizing: $box-sizing
+  -moz-box-sizing: $box-sizing
+  box-sizing: $box-sizing
+
+//border radius
+=border-radius($border-radius)
+  -webkit-border-radius: $border-radius
+  -moz-border-radius: $border-radius
+  border-radius: $border-radius
+
+//box shadow
+=box-shadow($offsetx, $offsety, $blur, $colour)
+  -webkit-box-shadow: $offsetx $offsety $blur $colour
+  -moz-box-shadow: $offsetx $offsety $blur $colour
+  -ms-box-shadow: $offsetx $offsety $blur $colour
+  box-shadow: $offsetx $offsety $blur $colour
+
+//media query
+=media($media-width)
+  @media (min-width: $media-width)
+    @content
