@@ -1,0 +1,72 @@
+// small sized screens
+.header{
+  height: 70px;
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+    li{
+      display: inline-block;
+      padding: 0 1em;
+    }
+    a{
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+    img{
+      vertical-align: middle;
+      margin: 15px 0;
+    }
+}
+.wcl-header{
+  background: $prime-red;
+  @include box-shadow(1px, 2px, 2px, $prime-white-light);
+  img{
+    width: 160px;
+  }
+}
+.wcl-links li a,
+.wc-header{
+  display: none;
+}
+// large sized screens
+@include media(57.5em){
+  .wcl-header{
+    background: #ffffff;
+  }
+
+  .icon a i{
+    color: $prime-black;
+  }
+
+  .wc-header{
+    display: block;
+    background: $prime-red;
+    img{
+      width: 200px;
+    }
+  }
+
+  .header{
+    .wc-header-content{
+      justify-content: left
+    }
+  }
+}
+//larger sized screens
+@include media(68.125em){
+  .header{
+    .nav{
+      justify-content: left;
+    }
+  }
+  .wcl-links li a{
+    display: block;
+    color: $prime-black;
+  }
+
+  .icons li a i{
+    display: none;
+  }
+}

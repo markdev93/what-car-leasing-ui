@@ -144,15 +144,15 @@ section {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-    .header .nav li {
-      display: inline-block;
-      padding: 0 1em; }
-    .header .nav a {
-      text-transform: capitalize;
-      font-weight: 500; }
-    .header .nav img {
-      vertical-align: middle;
-      margin: 15px 0; }
+  .header li {
+    display: inline-block;
+    padding: 0 1em; }
+  .header a {
+    text-transform: capitalize;
+    font-weight: 500; }
+  .header img {
+    vertical-align: middle;
+    margin: 15px 0; }
 
 .wcl-header {
   background: #BC081C;
