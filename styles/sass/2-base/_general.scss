@@ -15,7 +15,10 @@ li{
 }
 a{
   text-decoration: none;
-  color: $prime-white;
+  color: $prime-black;
+  &:hover{
+    color: $prime-blue-light;
+  }
 }
 img{
   height: auto;
