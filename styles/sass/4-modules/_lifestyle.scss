@@ -89,9 +89,13 @@
 }
 
 /* page break */
-.guide{
-  background: $prime-red;
+.quick-guide-break{
   background: url("https://www.whatcar.com/car-leasing/images/homepage/lease-dog.jpg") no-repeat center;
+}
+.advertise{
+  background: url("https://www.whatcar.com/car-leasing/images/homepage/lease-sign.jpg") no-repeat center;
+}
+.guide{
   background-size: cover;
   height: 12.5rem; /* 200px */
   position: relative;
@@ -99,9 +103,9 @@
 .overlay{
   background: rgba(0, 0, 0, 0.6);
   color: #f5f5f5;
-  position: absolute;
+  /*position: absolute;
   top: 0;
-  left: 0;
+  left: 0;*/
   padding: 10px;
   height: 100%;
 }
