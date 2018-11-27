@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  @include box-sizing(border-box);
+}
+body{
+  font-family: $font-stack;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $prime-black;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: $prime-black;
+  &:hover{
+    color: $prime-blue-light;
+  }
+}
+img{
+  height: auto;
+  width: 100%;
+}
+
+/* general fonts*/
+p,
+h3{
+  font-size: 1.125rem; /* 18px */
+}
+h3{
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.sub-title{
+  font-size: 1.25rem; /* 20px */
+  font-weight: 500;
+  text-transform: capitalize;
+  margin: 1.25rem 0;
+}
+.container{
+  margin: 0 auto;
+  width: 95%;
+}
+
+.about-wrapper{
+  text-align: center;
+}
+.usp{
+  img{
+    width: 30px;
+    vertical-align: middle;
+  }
+}
+
+.lease-info{
+  margin: 20px 0;
+}
+.next-steps{
+  margin: 10px 0;
+  a{
+    text-transform: capitalize;
+  }
+}
+
+//for testing purposes delete when in production
+section{
+  margin-top: 30px;
+}
+// medium sized screens
+@include media(45em){
+  .container{
+    width: 90%;
+  }
+  .usp{
+    padding: 1.25rem 0; /*20px 0*/
+    p{
+      display: inline-block;
+      padding-left: 0.3125rem; /* 5px */
+    }
+  }
+}
+// large sized screens
+@include media(57.5em){
+  .container{
+    width: 85%;
+  }
+}

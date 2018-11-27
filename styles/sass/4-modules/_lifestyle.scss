@@ -1,0 +1,132 @@
+.hero{
+  height: 60vh;
+  background: $prime-black-dark; /* IE Fallback */
+  background: linear-gradient(rgba(38, 50, 56, 0.45), rgba(38, 50, 56, 0.45)),url('../../img/hero.jpg') no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-content{
+  position: absolute;
+  width:100%;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50% ,-50%);
+  text-transform: capitalize;
+  text-align: center;
+  .location-wrapper{
+    color: #f5f5f5;
+    font-weight: 500;
+    margin: 2em 0;
+    h1{
+      font-size: 1.5rem;
+    }
+    .location{
+      font-size: 2.25rem;
+    }
+  }
+  .hero-search .form-check{
+    color: #F5F5F5;
+    text-align: left;
+  }
+  .btn{
+    padding: 1rem 10rem;
+    font-size: 0.85rem;
+    margin: 1.25rem 0;
+  }
+}
+
+/* Quick Links */
+.van-leasing{
+  background: url("../../img/links/van-leasing.jpg") no-repeat center;
+}
+.special-offers{
+  background: url("https://www.whatcar.com/car-leasing/images/homepage/mosaic4.jpg") no-repeat center;
+}
+.green-cars{
+  background: url("https://www.whatcar.com/car-leasing/images/homepage/mosaic1.jpg") no-repeat center;
+}
+.about-us{
+  background: url("https://www.whatcar.com/car-leasing/images/homepage/mosaic2.jpg") no-repeat center;
+}
+.in-stock-cars{
+  background: url("https://www.whatcar.com/car-leasing/images/homepage/mosaic6.jpg") no-repeat center;
+}
+.lifestyle-card{
+  /*background: $prime-blue-dark;*/
+  background-size: cover;
+  height: 20rem;
+  position: relative;
+}
+
+.label{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  color: $prime-white;
+  background: rgba(188, 8, 28, 0.6);
+  padding: 0.625rem; /* 10px */
+  transition: ease-in-out .3s;
+  cursor: pointer;
+  &:hover{
+    background: $prime-red;
+  }
+  .label-title{
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .label-cta{
+    color: $prime-white;
+  }
+}
+.van-leasing,
+.special-offers,
+.green-cars,
+.about-us,
+.in-stock-cars{
+  margin-top: -12px;
+}
+
+/* page break */
+.quick-guide-break{
+  background: url("https://www.whatcar.com/car-leasing/images/homepage/lease-dog.jpg") no-repeat center;
+}
+.advertise{
+  background: url("https://www.whatcar.com/car-leasing/images/homepage/lease-sign.jpg") no-repeat center;
+}
+.guide{
+  background-size: cover;
+  height: 12.5rem; /* 200px */
+  position: relative;
+}
+.overlay{
+  background: rgba(0, 0, 0, 0.6);
+  color: #f5f5f5;
+  /*position: absolute;
+  top: 0;
+  left: 0;*/
+  padding: 10px;
+  height: 100%;
+}
+.overlay-title{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+// medium sized screens
+@include media(45em){
+  .label{
+    width: 50%;
+    &:hover{
+      width: 55%;
+    }
+  }
+  .van-leasing,
+  .special-offers,
+  .green-cars,
+  .about-us,
+  .in-stock-cars{
+    margin-left: -12px;
+  }
+}

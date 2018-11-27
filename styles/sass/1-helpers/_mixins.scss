@@ -1,0 +1,38 @@
+// Mixins
+// =============================================================================
+//Box-sizing
+@mixin box-sizing($box-sizing){
+  -webkit-box-sizing: $box-sizing;
+  -moz-box-sizing: $box-sizing;
+  box-sizing: $box-sizing;
+}
+
+// Border-radius
+@mixin border-radius($border-radius){
+  -webkit-border-radius: $border-radius;
+  -moz-border-radius: $border-radius;
+  border-radius: $border-radius;
+}
+
+// Box-shadow
+@mixin box-shadow($offsetx, $offsety, $blur, $colour){
+  -webkit-box-shadow: $offsetx $offsety $blur $colour;
+  -moz-box-shadow: $offsetx $offsety $blur $colour;
+  -ms-box-shadow: $offsetx $offsety $blur $colour;
+  box-shadow: $offsetx $offsety $blur $colour;
+}
+
+//Media query
+@mixin media($media-width){
+  @media (min-width: $media-width){
+    @content;
+  }
+}
+
+// User select
+@mixin user-select($user-select){
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
