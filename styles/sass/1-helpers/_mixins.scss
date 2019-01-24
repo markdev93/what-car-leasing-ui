@@ -36,3 +36,18 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+// pseudo - for ::before & ::after
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pros;
+}
+
+// truncate
+@mixin truncate($truncation-boundary){
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
